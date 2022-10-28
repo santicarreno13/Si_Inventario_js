@@ -1,4 +1,5 @@
 // Crear un sistema de informacio de inventarios -login ingreso y salida de productos...
+const fs = require('fs');
 
 const readline = require('readline');
 const rl = readline.createInterface({
@@ -9,8 +10,8 @@ const rl = readline.createInterface({
 
             //-------------LOGIN-------------\\
 
-const User = "a"
-const Password = "1"
+const User = "forwardpaladih8"
+const Password = "12345"
 
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
 console.log('|                Welcome a                 |');
@@ -131,7 +132,7 @@ rl.question('---> Ingresa tu nombre ', function (nombre) {
 
 
         //-------------PRODUCTOS LIST-------------\\
-            function ListaProductos(){
+            function ListaProductosr(){
                 console.log(`Aqui van los productos, ta en construccion :)`);
 
                 console.table(pr);
@@ -156,19 +157,19 @@ rl.question('---> Ingresa tu nombre ', function (nombre) {
 
                         switch(res){
                             case '1':
-                                EliminarProductos();
+                                EliminarProductosf();
                                 break;
                             case '2':
-                                ActualizarProducto();
+                                ActualizarProductoo();
                                 break;
                             case '3':
-                                ListaProductos();
+                                ListaProductosr();
                                 break;
                             case '4':
-                                Venta();
+                                Ventaw();
                                 break;
                             case '5':
-                                Despedida();
+                                Despedidaa();
                                 break;
                         }
                     }
@@ -180,7 +181,7 @@ rl.question('---> Ingresa tu nombre ', function (nombre) {
         
         //-------------PRODUCTOS DELETE-------------\\
 
-        function EliminarProductos(){
+        function EliminarProductosf(){
             console.log(`Aqui van los productos, ta en construccion :)`);          
             console.table(pr);
              rl.question('--->Que id deseas elimnar? ', function (eliminar) {
@@ -196,7 +197,7 @@ rl.question('---> Ingresa tu nombre ', function (nombre) {
 
             //-------------PRODUCTOS UPDATE-------------\\
 
-        function ActualizarProducto(){
+        function ActualizarProductoo(){
             console.log(`Aqui van los productos, ta en construccion :)`);          
             console.table(pr);
              rl.question('--->Que id deseas Editar? ', function (edit) {
@@ -244,7 +245,7 @@ rl.question('---> Ingresa tu nombre ', function (nombre) {
 
         //-------------PRODUCTOS VENTA-------------\\
 
-        function Venta(){
+        function Ventaw(){
             console.table(pr);
             rl.question('--->Que elemento deseas Comprar? *Igresa el id* ', function (Comprar) {
 
@@ -264,28 +265,15 @@ rl.question('---> Ingresa tu nombre ', function (nombre) {
 
         //-------------BAY BAY TuLón-------------\\
 
-        function Despedida(){
+        function Despedidaa(){
             console.log('╔========================================================╗');
             console.log(`║ Gracias por entrar a TuLón, Fue un placer atenderte :) ║`)
             console.log('╚========================================================╝');
             rl.close();
         }
+
+            
         
-            
-            
-            
-            
-
- 
-    
-
-
-    
-
-
-
-
-
 
 
 
